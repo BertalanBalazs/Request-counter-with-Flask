@@ -5,8 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Main Site For the Counts</h1>
-    <a href="/request-counter">Click here!</a>
-    <p>{{ counts }}</p>
+    <h1>Main Site</h1>
+    <form action="/request-counter" method="GET">
+        <button type="submit" >Click here for GET!</button>
+    <br>
+        <button type="submit" formmethod="POST">Click here for POST!</button>
+    </form>
+    <br>
+    <a href="/statistics">Click here for see the counts table</a>
 </body>
 </html>
